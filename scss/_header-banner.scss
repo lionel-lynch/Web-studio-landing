@@ -1,0 +1,56 @@
+:root {
+	--header-height: 98px;
+}
+
+.header-banner {
+	height: calc(100vh - var(--header-height));
+	display: flex;
+}
+
+.header-banner__text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+	
+	font-size: 42px;
+	font-weight: 600;
+    padding: 16px 60px 16px 0;
+    overflow: hidden;
+    background-color: #F2F3FF;
+
+    .header-banner__text-inner {
+        max-width: ($maxContentWidth / 2) - 60;
+    }
+
+    p {
+        line-height: 48px;
+    }
+}
+
+.header-banner__accent {
+    color: $blue;
+    font-weight: 700;
+}
+
+.header-banner__request {
+    margin-top: 28px;
+}
+
+.header-banner__request button {
+    padding: 15px 25px;
+    font-size: 16px;
+}
+
+.header-banner__poster {
+    width: 50%;
+    background: url("../img/banners/header-banner.jpg") center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-banner__mobile-text {
+    display: none;
+}

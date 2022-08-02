@@ -1,0 +1,45 @@
+.info-modal {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    min-width: 240px;
+    max-width: 45%;
+    min-height: 60px;
+    line-height: 1.3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-radius: 14px;
+    font-size: 22px;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+@media (min-width: 1024px) {
+    .info-modal__ok-btn button:hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 380px) {
+    .info-modal {
+        font-size: 19px;
+        max-width: 90%;
+    }
+}
+
+.success-modal {
+    background-color: #56995b;
+}
+
+.error-modal {
+    background-color: #e6365c;
+}
+
+.info-modal--hidden {
+    top: -100vh!important;
+}

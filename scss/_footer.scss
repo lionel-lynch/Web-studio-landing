@@ -1,0 +1,122 @@
+.footer {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.footer__content {
+    margin: auto;
+    color: #181818;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__company-name {
+    display: flex;
+    align-items: center;
+
+    .company-name {
+        margin-left: 8px;
+        font-size: 34px;
+        font-weight: 700;
+        color: $blue;
+    }
+}
+
+.footer__about-company {
+    margin-top: 32px;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer__company {
+    max-width: 49.1%;
+}
+
+.footer__socials-list {
+    display: flex;
+    align-items: center;
+
+    li {
+
+        a {
+            line-height: 0.1;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $blue;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+
+    .tg-link svg {
+        position: relative;
+        right: 1px;
+    }
+
+    .wa-link svg {
+        position: relative;
+        left: 0.3px;
+        bottom: 0.6px;
+    }
+
+    li:nth-child(n+2) {
+        margin-left: 19px;
+    }
+
+    li:hover a {
+        background-color: #4552b4;
+    }
+}
+
+.footer__contacts {
+    margin-top: 36px;
+    font-weight: 600;
+    font-size: 18px;
+
+    a {
+        color: inherit;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .company-number,
+    .company-email {
+        margin-top: 10px;
+    }
+}
+
+.footer__sub {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 112px;
+}
+
+.footer__links-list {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+    li a {
+        color: #181818;
+        transition: 0.3s;
+    }
+
+    li a:hover {
+        color: $blue;
+    }
+
+    li:nth-child(n+2) {
+        margin-left: 20px;
+    }
+}

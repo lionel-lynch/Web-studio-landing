@@ -1,0 +1,56 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.page {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.site-button {
+    border-radius: 30px;
+    font-weight: 700;
+    letter-spacing: 1.15px;
+    transition: 0.3s;
+    background-color: $blue;
+    color: #fff;
+}
+
+.site-button:hover {
+    background-color: $darkBlue;
+}
+
+.section-content {
+    max-width: $maxContentWidth;
+}
+
+.site-button:active {
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+.site-title {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+._anim-items {
+    transition: all 0.8s ease 0s;
+}
+
+@mixin contentAnimate($offset) {
+    transform: translate($offset, 0px);
+}
+
+._anim-items._active {
+    transform: translate(0px, 0px) !important;
+}

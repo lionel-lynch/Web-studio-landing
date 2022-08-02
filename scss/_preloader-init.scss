@@ -1,0 +1,8 @@
+.submit-btn-loader {
+	@include loader10($size: 14px, $gap: 12px, $color: $blue, $align: middle);
+    top: -14px;
+}
+
+.submit-btn-loader--hidden {
+    display: none;
+}

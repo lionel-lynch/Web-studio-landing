@@ -1,0 +1,57 @@
+.our-support {
+    padding: 122px 0 90px;
+    background: url("../img/bg/why-us.png") center center no-repeat #F2F3FF;
+    background-size: cover;
+}
+
+.our-support__content {
+    margin: auto;
+}
+
+.our-support__title {
+    color: $blue;
+}
+
+.our-support__grid {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our-support__grid-item {
+    padding: 30px 27px;
+    width: 29%;
+    transition: 0.4s;
+    border-radius: 6px;
+    cursor: default;
+}
+
+.our-support__grid-item:hover {
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
+}
+
+.our-support__icon {
+    min-height: 72px;
+}
+
+.our-support__name {
+    margin-top: 22px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    min-height: 60px;
+    color: $blue;
+}
+
+.our-support__list {
+    margin-top: 27px;
+    color: rgba(24, 24, 24, 0.7);
+
+    li:nth-child(n+2) {
+        margin-top: 26px;
+    }
+}
+
+.our-support__grid-item--stub {
+    width: 13%;
+}

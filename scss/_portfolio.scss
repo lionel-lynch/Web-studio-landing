@@ -1,0 +1,127 @@
+.portfolio {
+    padding: 70px 0 185px;
+    background-color: $blue;
+}
+
+.portfolio__content {
+    margin: auto;
+}
+
+.portfolio__title {
+    color: #fff;
+}
+
+.portfolio__main {
+    margin-top: 90px;
+}
+
+.portfolio__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio__row:nth-child(n+2) {
+    margin-top: 30px;
+}
+
+.portfolio__item {
+    position: relative;
+    height: 517px;
+    overflow: hidden;
+    
+    img {
+        display: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:hover .portfolio__watch-case {
+        display: flex;
+    }
+}
+
+.portfolio__row:first-of-type {
+
+    .portfolio__item:first-of-type {
+        width: 57.4%;
+    }
+
+    .portfolio__item:nth-of-type(2) {
+        width: 40.08%;
+    }
+}
+
+.portfolio__row:nth-of-type(2) {
+    position: relative;
+
+    .portfolio__item:first-of-type {
+        width: 40.08%;
+    }
+
+    .portfolio__item:nth-of-type(2) {
+        width: 57.4%;
+    }
+}
+
+.portfolio__watch-all {
+    position: absolute;
+    bottom: -97.5px;
+    left: 33%;
+    width: 195px;
+    height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: $blue;
+
+    svg {
+        width: 64px;
+        height: 64px;
+        fill: #fff;
+    }
+
+    &:hover {
+        background-color: #fff;
+        svg {
+            fill: $blue;
+        }
+    }
+}
+
+.portfolio__watch-case {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.portfolio__details {
+    width: 195px;
+    height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.35;
+    border-radius: 50%;
+    font-size: 28px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: $blue;
+    background-color: #fff;
+}
+
+.portfolio__details:hover {
+    transform: scale(1.03);
+}
+
+.portfolio__details:active {
+    box-shadow: inset 0 0 15px 4px rgba(0,0,0,0.25);
+}
